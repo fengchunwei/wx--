@@ -1,0 +1,10 @@
+{
+  "usingComponents": {
+    "van-field": "/miniprogram_npm/@vant/weapp/field/index",
+    "van-cell-group": "/miniprogram_npm/@vant/weapp/cell-group/index",
+    "van-button": "/miniprogram_npm/@vant/weapp/button/index"
+  },
+  "navigationBarBackgroundColor": "#000539",
+  "navigationBarTextStyle": "white",
+  "navigationBarTitleText": "登录"
+}

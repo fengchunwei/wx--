@@ -1,0 +1,38 @@
+.water-fall-box{
+  display: flex;
+  min-height: 100vh;
+  background: rgba(0,5,57, 0.9);
+}
+.water-fall-list{
+  width: 50%;
+}
+.water-fall-item{
+  padding: 20rpx;
+  text-align: center;
+  color: white;
+  animation: ani 2s ease;
+}
+.water-fall-item image {
+  width: 100%;
+  border-radius: 18rpx;
+}
+@keyframes ani {
+  /* //起始位置 */
+  from{
+    transform: translateY(100vh);
+    opacity: 0;
+  }
+  /* 终止位置 */
+  to{
+    opacity: 1;
+  }
+}
+.icon{
+  position: fixed;
+  bottom: 40rpx;
+  right: 40rpx;
+  width: 60rpx;
+  height: 60rpx;
+  background-color: aqua;
+  border-radius: 50%;
+}

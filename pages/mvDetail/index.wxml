@@ -1,0 +1,4 @@
+<video id="mvVideo"  src="{{url}}" danmu-btn="true" style="width:100%" enable-danmu='true' bindtimeupdate='handTimeupdate' danmu-list='{{danmuList}}'></video>
+<input bindinput="onInput">
+</input>
+<button bindtap="senddanMu">发送弹幕</button> 

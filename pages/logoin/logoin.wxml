@@ -1,0 +1,24 @@
+<van-cell-group>
+  <van-field
+    value="{{ value }}"
+    placeholder="请输入用户名"
+    border="{{ username }}"
+    required
+    label='用户名'
+    bind:change="onChange"
+    title='用户名'
+    data-key='username'
+  />
+
+    <van-field
+    value="{{ password }}"
+    type='password'
+    label='密码'
+    placeholder="请输入密码"
+    required
+    bind:change="onChange"
+    border="{{ false }}"
+    data-key='password'
+  />
+</van-cell-group>
+<van-button type="primary" size="large" color="linear-gradient(to right, #4bb0ff, #6149f6)" bindtap="login">登录</van-button>

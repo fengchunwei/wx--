@@ -1,0 +1,21 @@
+<!--轮播图-->
+
+			<swiper current="0" indicator-dots="true" autoplay="true"  duration="true" class="swiper">
+				<swiper-item  wx:for="{{list}}" wx:key="id">
+					<image src='{{item.coverImgUrl}}' mode="" style="width:100%;"></image>
+				</swiper-item>
+			</swiper>
+
+<view style=" text-align: center;">轮播图</view>
+<!-- 新闻列表 -->
+<view wx:for='{{list}}' bindtap="open" data-id="{{item.articleId}}" style="padding: 5% 3%;">
+	<view style="width:100%;">
+		<image src='{{item.coverImgUrl}}' mode="" style="width:100%; border-radius: 20rpx;"></image>
+	</view>
+	<view>
+		<view>{{item.title}}</view>
+	</view>
+</view>
+
+<!-- <button open-type="getUserInfo">获取用户信息</button> -->
+<button open-type="share">分享</button>

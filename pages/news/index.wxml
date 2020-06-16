@@ -1,0 +1,4 @@
+<view >
+  <image src="{{listr.coverImgUrl}}" style="width:100%;"></image>
+   <rich-text nodes="{{listr.content}}"></rich-text>
+</view>

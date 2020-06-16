@@ -1,0 +1,140 @@
+/* pages/chatRoom/index.wxss */
+.chat-room {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  background: rgb(94, 79, 129);
+}
+
+.chat-room-window {
+  flex-grow: 1;
+  height: calc(100% - 120rpx);
+}
+ 
+.chat-room-action {
+  height: 120rpx;
+  display: flex;
+  background: rgb(71, 66, 118);
+}
+
+.chat-room-input {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.chat-room-input input {
+  background: white;
+  
+  width: 90%;
+  height: 60%;
+}
+
+.chat-room-button {
+  width: 200rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.chat-room-button button {
+  width: 125rpx !important;
+}
+
+.my-msg {
+  text-align: right;
+  
+}
+.other-msg {
+  text-align: left;
+}
+.my-msg , .other-msg {
+  display: flex;
+  padding: 16rpx;
+}
+/* 头像 */
+.avatar {
+  width: 90rpx;
+  height: 90rpx;
+}
+.avatar image {
+  width: 90%;
+  height: 90%;
+  border-radius: 10rpx;
+}
+/* 消息内容 */
+.chat-content{
+  padding: 0 10rpx ;
+  flex: 1;
+  width: calc(100% - 120rpx);
+}
+.chat-content .nickName {
+  margin-left: 20rpx ;
+   color: #fff;
+   font-size: 26rpx; 
+}
+.chat-content .content {
+  background: white;
+  padding: 20rpx 24rpx;
+  border-radius: 10rpx;
+  margin-top: 10rpx;
+  position: relative;
+  margin-left: 25rpx;
+  max-width: 70%;
+}
+ .chat-content .content::before {
+  content: '';
+  width: 30rpx;
+  height: 30rpx;
+  position: absolute;
+  top: 35rpx;
+  background: white;
+} 
+/* 其他人 */
+.other-msg .chat-content {
+  display: flex;
+  flex-direction:column;
+  align-items: flex-start
+  ;
+}
+
+/* 我自己 */
+.my-msg{
+  flex-direction: row-reverse;
+}
+.my-msg .chat-content {
+  display: flex;
+  flex-direction:column;
+  align-items: flex-end;
+}
+.my-msg .chat-content .content {
+  margin-right: 25rpx;
+  text-align: left;
+}
+.my-msg .chat-content .content .nickName{
+  margin-right: 25rpx;
+}
+.my-msg  .chat-content .content::before {
+  right: 0;
+  top: 10rpx!important;
+  transform: rotate(45deg) translateX(50%);
+} 
+.other-msg .chat-content .content::before{
+  left: 0;
+  transform: rotate(45deg) translateX(-50%);
+}
+
+/* 上传图片 */
+.uploder-img{
+  max-width: 70%;
+  margin-top: 22rpx;
+  margin-right: 10;
+  border-radius: 10rpx;
+}
+.my-msg .uploder-img  image{
+  width: 100%;
+}

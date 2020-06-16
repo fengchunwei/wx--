@@ -1,0 +1,18 @@
+<view class="avatar">
+	<image src="{{userInfo.avatar}}" bindtap="upLoad" class="avatar-img"></image>
+</view>
+<!-- <view bindtap="changeimg" style="  text-align: center;">上传头像</view> -->
+
+<view class="info">
+	<van-cell-group>
+		<van-field value="{{ value }}" readonly='true' placeholder="{{userInfo.userName}}" border="{{ false }}" label='用户名' bind:change="onChange" />
+		<van-field value="{{ value }}" readonly='true' placeholder="{{userInfo.email}}" border="{{ false }}" label='邮箱' bind:change="onChange" />
+		<van-field value="{{ value }}" readonly='true' placeholder="{{userInfo.phonenumber}}" border="{{ false }}" label='手机号' bind:change="onChange" />
+	</van-cell-group>
+</view>
+
+<view class="button">
+	<van-button bindtap="change" color="linear-gradient(to right, #4bb0ff, #6149f6)" class="button">
+		修改个人信息
+	</van-button>
+</view>

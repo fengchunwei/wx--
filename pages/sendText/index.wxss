@@ -1,0 +1,14 @@
+/* pages/sendText/index.wxss */
+.user{
+  padding:2% 10%;
+}
+.title{
+  padding:2% 10%;
+}
+.content{
+  padding:2% 10%;
+}
+.getIntro{
+  width: 99%;
+  border: 2px solid #000539;
+}

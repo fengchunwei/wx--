@@ -1,0 +1,11 @@
+/* pages/video/index.wxss */
+.video-Mv{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 30rpx;
+  margin-top: 20rpx;
+}
+.video-Mv image {
+  width: 100%;
+}

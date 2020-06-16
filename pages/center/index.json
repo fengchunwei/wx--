@@ -1,0 +1,10 @@
+{
+  "usingComponents": {
+    "van-uploader": "/miniprogram_npm/@vant/weapp/uploader/index",
+    "van-field": "/miniprogram_npm/@vant/weapp/field/index",
+    "van-button": "/miniprogram_npm/@vant/weapp/button/index"
+  },
+  "navigationBarTitleText": "个人中心",
+  "navigationBarBackgroundColor": "#000539",
+  "navigationBarTextStyle": "white"
+}

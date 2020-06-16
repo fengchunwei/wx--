@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "van-icon": "/miniprogram_npm/@vant/weapp/icon/index"
+  },
+  "navigationBarBackgroundColor": "#34106b",
+  "navigationBarTextStyle": "white",
+  "navigationBarTitleText": "聊天室"
+}

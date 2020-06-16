@@ -1,0 +1,6 @@
+<view bindtap="moveDetail" data-id="{{item.id}}" class="video-Mv" wx:for='{{list}}' wx:key="id">
+	<view>
+		<image src="{{item.cover}}"></image>
+	</view>
+	<view>{{item.name}}</view>
+</view>

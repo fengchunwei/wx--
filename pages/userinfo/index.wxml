@@ -1,0 +1,21 @@
+<van-cell-group class='changeInfo'>
+  <van-field
+    placeholder="请输入用户名"
+    border="{{ false }}"
+    bind:change="onChange"
+    data-key="userName"
+    label='昵称'
+  />
+
+    <van-field
+    
+    placeholder="请输入用户名"
+    border="{{ false }}"
+    bind:change="onChange"
+    data-key="email"
+    label='邮箱'
+  />
+</van-cell-group>
+
+<van-button type="primary" bindtap="changeUserName" size="large">点击修改</van-button>
+

@@ -1,0 +1,20 @@
+<view class="water-fall-box">
+	<!-- 左侧列表 -->
+	<view class="water-fall-list">
+		<view wx:for="{{leftList}}" class="water-fall-item" bindtap="skipchatRoom" data-id="{{item.postsId}}">
+			<image src="{{item.coverImgUrl}}" mode="widthFix"></image>
+			<view>{{item.title}}</view>
+		</view>
+	</view>
+	<!-- 右侧列表 -->
+	<view class="water-fall-list">
+		<view wx:for="{{rightList}}" class="water-fall-item" bindtap="skipchatRoom" data-id="{{item.postsId}}">
+			<image src="{{item.coverImgUrl}}" mode="widthFix"></image>
+			<view>{{item.title}}</view>
+		</view>
+	</view>
+	<view>
+		<van-icon bindtap="skipPackageA" class="icon" name="plus" />
+	</view>
+</view>
+

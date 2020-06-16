@@ -1,0 +1,9 @@
+{
+  "usingComponents": {},
+  "enablePullDownRefresh": true,
+  "backgroundTextStyle": "dark" ,
+  "navigationBarBackgroundColor": "#000539",
+  "navigationBarTextStyle": "white",
+  "onReachBottomDistance":50,
+  "navigationBarTitleText": "新闻列表"
+}

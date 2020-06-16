@@ -1,0 +1,24 @@
+.avatar{
+  text-align: center;
+}
+.avatar-img{
+  width: 200rpx;
+  height: 200rpx;
+  border-radius: 50%;
+}
+/* .van-cell {
+
+  margin-top: 20rpx;
+  margin-left: 100rpx;
+} */
+.van-field__body{
+  color: rgb(148, 30, 30);
+}
+.info{
+  width: 100%;
+  text-align: center;
+}
+.button {
+  width: 100%;
+  text-align: center;
+}

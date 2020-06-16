@@ -1,0 +1,74 @@
+{
+  "pages": [
+    "pages/luntan/mypage",
+    "pages/sendText/index",
+    "pages/newsList/newsList",
+    "pages/video/index",
+    "pages/chatRoom/index",
+    "pages/center/index",
+    "pages/userinfo/index",
+    "pages/news/index",
+    "pages/logoin/logoin",
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/mvDetail/index"
+ 
+  ],
+  "subpackages": [
+    {
+      "root": "packageA",
+      "pages": [
+        "pages/aindex/index"
+      ]
+    },
+    {
+      "root": "packageB",
+      "pages": [
+        "pages/bindex/index"
+      ],
+      "independent": true
+    }
+  ],
+  "tabBar": {
+    "selectedColor": "#4a90e2",
+    "list": [
+      {
+        "pagePath": "pages/newsList/newsList",
+        "text": "新闻列表",
+        "iconPath": "./images/1.png",
+        "selectedIconPath": "./images/1.png"
+      },
+      {
+        "pagePath": "pages/logoin/logoin",
+        "text": "登录",
+        "iconPath": "./images/2.png",
+        "selectedIconPath": "./images/2.png"
+      },
+      {
+        "pagePath": "pages/luntan/mypage",
+        "text": "论坛",
+        "iconPath": "./images/3.png",
+        "selectedIconPath": "./images/3.png"
+      },
+      {
+        "pagePath": "pages/center/index",
+        "text": "个人中心",
+        "iconPath": "./images/4.png",
+        "selectedIconPath": "./images/4.png"
+      },
+      {
+        "pagePath": "pages/video/index",
+        "text": "视频",
+        "iconPath": "./images/5.png",
+        "selectedIconPath": "./images/5.png"
+      }
+    ]
+  },
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json"
+}

@@ -1,0 +1,36 @@
+<!-- 整体盒子 -->
+<view class="chat-room">
+	<!-- 顶部布局 -->
+	<scroll-view scroll-y="true" class="chat-room-window" scroll-into-view="{{lastMsgId}}">
+		<view wx:for='{{list}}' id="msg{{index}}">
+			<!-- 普通文本消息 -->
+			<view class="{{item.from == customUserInfo.loginName?'my-msg':'other-msg'}}">
+				<!-- 消息发送人 -->
+				<view class="avatar">
+					<image src="{{item.avatar?item.avatar:'../../images/5.png'}}"></image>
+				</view>
+				<!-- 消息内容 -->
+				<view class="chat-content">
+					<view class="nickName"> {{item.nickName}}</view>
+					<view class="content" wx:if="{{item.type == 1}}">
+						<text >{{item.content}}</text>
+						</view>
+					<image class="uploder-img" wx:elif="{{item.type == 2}}" src="{{item.content}}" mode="widthFix"></image>
+				</view>
+			</view>
+		</view>
+	</scroll-view>
+	<!-- 消息发送框 -->
+	<view class="chat-room-action">
+		<!--  输入框 -->
+		<view class="chat-room-input">
+			<input bindinput="onInput" value="{{inputValue}}"></input>
+		</view>
+		<!-- 按钮 -->
+
+		<view class="chat-room-button">
+			<van-icon size="50rpx" bindtap="sendImg" name="photo-o" />
+			<button bindtap="sendMsg" size="mini" type="primary">发送</button>
+		</view>
+	</view>
+</view>
